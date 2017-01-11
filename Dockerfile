@@ -1,11 +1,11 @@
 FROM node:latest
 
-RUN mkdir -p /Applications/XAMPP/xamppfiles/htdocs/npmnodejsapp
+RUN mkdir -p /usr/src/app
 
-WORKDIR /Applications/XAMPP/xamppfiles/htdocs/npmnodejsapp
+WORKDIR /usr/src/app
 
-COPY package.json /Applications/XAMPP/xamppfiles/htdocs/npmnodejsapp/
+COPY package.json /usr/src/app/
 
-COPY app.js /Applications/XAMPP/xamppfiles/htdocs/npmnodejsapp/
+COPY app.js /usr/src/app/
 
 EXPOSE 8888
